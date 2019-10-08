@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		37075F2F234BE64300EB5BA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37075F2E234BE64300EB5BA8 /* AppDelegate.m */; };
 		37075F32234BE64300EB5BA8 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37075F31234BE64300EB5BA8 /* SceneDelegate.m */; };
-		37075F35234BE64300EB5BA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37075F34234BE64300EB5BA8 /* ViewController.m */; };
 		37075F38234BE64300EB5BA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37075F36234BE64300EB5BA8 /* Main.storyboard */; };
 		37075F3A234BE64400EB5BA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37075F39234BE64400EB5BA8 /* Assets.xcassets */; };
 		37075F3D234BE64400EB5BA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37075F3B234BE64400EB5BA8 /* LaunchScreen.storyboard */; };
@@ -17,6 +16,8 @@
 		37941070234BE9B20025CE4E /* MJRPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3794106F234BE9B20025CE4E /* MJRPlanetsCollectionViewController.m */; };
 		37941074234BEAF20025CE4E /* MJRPlanetsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37941073234BEAF20025CE4E /* MJRPlanetsCollectionViewCell.m */; };
 		37941079234BEF720025CE4E /* MJRSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37941078234BEF720025CE4E /* MJRSettingsViewController.m */; };
+		3794107E234BF44F0025CE4E /* MJRPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3794107D234BF44F0025CE4E /* MJRPlanet.m */; };
+		37941082234BF9AB0025CE4E /* MJRPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37941081234BF9AB0025CE4E /* MJRPlanetController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +26,6 @@
 		37075F2E234BE64300EB5BA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		37075F30234BE64300EB5BA8 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		37075F31234BE64300EB5BA8 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		37075F33234BE64300EB5BA8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		37075F34234BE64300EB5BA8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		37075F37234BE64300EB5BA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37075F39234BE64400EB5BA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37075F3C234BE64400EB5BA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +37,10 @@
 		37941073234BEAF20025CE4E /* MJRPlanetsCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRPlanetsCollectionViewCell.m; sourceTree = "<group>"; };
 		37941077234BEF720025CE4E /* MJRSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRSettingsViewController.h; sourceTree = "<group>"; };
 		37941078234BEF720025CE4E /* MJRSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRSettingsViewController.m; sourceTree = "<group>"; };
+		3794107C234BF44F0025CE4E /* MJRPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRPlanet.h; sourceTree = "<group>"; };
+		3794107D234BF44F0025CE4E /* MJRPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRPlanet.m; sourceTree = "<group>"; };
+		37941080234BF9AB0025CE4E /* MJRPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRPlanetController.h; sourceTree = "<group>"; };
+		37941081234BF9AB0025CE4E /* MJRPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRPlanetController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +73,10 @@
 		37075F2C234BE64300EB5BA8 /* Planets-ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				3794107B234BF42B0025CE4E /* Model-Controller */,
+				3794107A234BF41D0025CE4E /* Model */,
 				37941071234BEAB60025CE4E /* Views */,
 				3794106D234BE9900025CE4E /* View-Controllers */,
-				37075F33234BE64300EB5BA8 /* ViewController.h */,
-				37075F34234BE64300EB5BA8 /* ViewController.m */,
 				37075F47234BE76E00EB5BA8 /* Storyboards */,
 				37075F39234BE64400EB5BA8 /* Assets.xcassets */,
 				37075F3E234BE64400EB5BA8 /* Info.plist */,
@@ -137,6 +140,40 @@
 				37941078234BEF720025CE4E /* MJRSettingsViewController.m */,
 			);
 			path = "Settings-VC";
+			sourceTree = "<group>";
+		};
+		3794107A234BF41D0025CE4E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3794107F234BF45F0025CE4E /* Planet */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3794107B234BF42B0025CE4E /* Model-Controller */ = {
+			isa = PBXGroup;
+			children = (
+				37941083234BF9B80025CE4E /* Planet-Controller */,
+			);
+			path = "Model-Controller";
+			sourceTree = "<group>";
+		};
+		3794107F234BF45F0025CE4E /* Planet */ = {
+			isa = PBXGroup;
+			children = (
+				3794107C234BF44F0025CE4E /* MJRPlanet.h */,
+				3794107D234BF44F0025CE4E /* MJRPlanet.m */,
+			);
+			path = Planet;
+			sourceTree = "<group>";
+		};
+		37941083234BF9B80025CE4E /* Planet-Controller */ = {
+			isa = PBXGroup;
+			children = (
+				37941080234BF9AB0025CE4E /* MJRPlanetController.h */,
+				37941081234BF9AB0025CE4E /* MJRPlanetController.m */,
+			);
+			path = "Planet-Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,10 +247,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				37941074234BEAF20025CE4E /* MJRPlanetsCollectionViewCell.m in Sources */,
-				37075F35234BE64300EB5BA8 /* ViewController.m in Sources */,
+				37941082234BF9AB0025CE4E /* MJRPlanetController.m in Sources */,
 				37075F2F234BE64300EB5BA8 /* AppDelegate.m in Sources */,
 				37075F40234BE64400EB5BA8 /* main.m in Sources */,
 				37941070234BE9B20025CE4E /* MJRPlanetsCollectionViewController.m in Sources */,
+				3794107E234BF44F0025CE4E /* MJRPlanet.m in Sources */,
 				37941079234BEF720025CE4E /* MJRSettingsViewController.m in Sources */,
 				37075F32234BE64300EB5BA8 /* SceneDelegate.m in Sources */,
 			);
