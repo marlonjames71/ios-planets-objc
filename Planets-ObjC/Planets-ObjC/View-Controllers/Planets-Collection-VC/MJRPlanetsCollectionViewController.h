@@ -10,7 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class MJRPlanetController;
+
 @interface MJRPlanetsCollectionViewController : UICollectionViewController
+
+@property MJRPlanetController *planetController;
 
 @end
 
