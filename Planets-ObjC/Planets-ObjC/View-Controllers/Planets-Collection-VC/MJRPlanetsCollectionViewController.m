@@ -63,7 +63,7 @@ static NSString * const reuseIdentifier = @"PlanetCell";
 
     MJRPlanet *planet = self.planetController.planets[indexPath.row];
 
-    cell.nameLabel.text = planet.name;
+    cell.nameLabel.text = planet.name.capitalizedString;
     cell.imageView.image = [UIImage imageNamed:planet.name];
     
     return cell;

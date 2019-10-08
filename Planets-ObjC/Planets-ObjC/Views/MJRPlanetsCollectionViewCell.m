@@ -12,6 +12,9 @@
 
 @implementation MJRPlanetsCollectionViewCell
 
-
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    _container.layer.cornerRadius = 10;
+}
 
 @end
