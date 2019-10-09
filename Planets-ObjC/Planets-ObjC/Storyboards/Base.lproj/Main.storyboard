@@ -83,7 +83,7 @@
                     <navigationItem key="navigationItem" title="Planets" largeTitleDisplayMode="always" id="ml5-Lk-HuH">
                         <barButtonItem key="rightBarButtonItem" image="gear" catalog="system" id="WyE-PM-cfI">
                             <connections>
-                                <segue destination="ecn-Ii-hrt" kind="presentation" identifier="SettingsModalSegue" id="mJr-x2-jbv"/>
+                                <segue destination="ecn-Ii-hrt" kind="presentation" identifier="SettingsModalSegue" modalPresentationStyle="fullScreen" id="mJr-x2-jbv"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -97,11 +97,11 @@
             <objects>
                 <viewController id="ecn-Ii-hrt" customClass="MJRSettingsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UGI-vv-pIc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="6gz-vc-xa6">
-                                <rect key="frame" x="50" y="405.5" width="314" height="31"/>
+                                <rect key="frame" x="50" y="432.5" width="314" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is Pluto a planet?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hz9-9z-Wc9">
                                         <rect key="frame" x="0.0" y="0.0" width="249" height="31"/>
@@ -118,7 +118,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGv-t5-K57">
-                                <rect key="frame" x="183" y="536.5" width="48" height="46.5"/>
+                                <rect key="frame" x="183" y="563.5" width="48" height="46.5"/>
                                 <state key="normal" image="checkmark.circle" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40" weight="semibold"/>
                                 </state>
@@ -127,7 +127,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzu-ZB-Xn7">
-                                <rect key="frame" x="153.5" y="40" width="107" height="36"/>
+                                <rect key="frame" x="153.5" y="84" width="107" height="36"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

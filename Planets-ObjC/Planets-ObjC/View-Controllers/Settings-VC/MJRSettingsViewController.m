@@ -16,16 +16,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    _plutoSwitch.on = [defaults valueForKey:@"shouldShowPluto"];
+    BOOL shouldShowPluto = [defaults boolForKey:@"shouldShowPluto"];
+    [[self plutoSwitch] setOn:shouldShowPluto];
 }
 
 - (IBAction)doneTapped:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (IBAction)plutoSwitchValueChanged:(id)sender {
+- (IBAction)plutoSwitchValueChanged:(UISwitch *)sender {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setBool:self.plutoSwitch forKey:@"shouldShowPluto"];
+    if ([sender isOn]) {
+        [defaults setBool:YES forKey:@"shouldShowPluto"];
+    } else {
+        [defaults setBool:NO forKey:@"shouldShowPluto"];
+    }
 }
 @end
